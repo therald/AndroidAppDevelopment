@@ -32,68 +32,129 @@ body {
   line-height: 1;
 }
 
-/* line 33, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 34, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+body main #content {
+  width: 100%;
+}
+
+/* line 37, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+body main #content #desktop_schedule_table {
+  display: none;
+}
+
+/* line 41, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+body main #content #mobile_schedule_grid {
+  display: block;
+  width: 100%;
+}
+
+/* line 45, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+body main #content #mobile_schedule_grid .schedule_block {
+  background-color: #B2DFDB;
+  border-radius: 5%;
+  margin: auto;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 95%;
+}
+
+/* line 53, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+body main #content #mobile_schedule_grid .schedule_block:last-child {
+  margin-bottom: 0rem;
+}
+
+/* line 58, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+body main #content #mobile_schedule_grid .schedule_block .block_content h1 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 2rem;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 69, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+body main #content #mobile_schedule_grid .schedule_block .block_content h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 79, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+body main #content #mobile_schedule_grid .schedule_block .block_content h3 {
+  font-weight: normal;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* line 90, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav {
   background-color: #009688;
   height: 4rem;
 }
 
-/* line 38, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 95, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav div svg {
   height: 4rem;
   margin-left: 0.5rem;
   width: 4rem;
 }
 
-/* line 43, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 100, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav div svg path {
   fill: #FFFFFF;
 }
 
-/* line 48, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 105, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav div svg#hamburger_menu_icon {
   display: block;
 }
 
-/* line 52, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 109, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav div svg#close_hamburger_menu_icon {
   display: none;
 }
 
-/* line 58, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 115, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav#expanded_menu {
   display: none;
 }
 
-/* line 62, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 119, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav#hamburger_menu {
   display: block;
 }
 
-/* line 67, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 124, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 72, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 129, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 nav ul {
   list-style: none;
 }
 
-/* line 76, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 133, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 80, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 137, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 86, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 143, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 a {
   margin: 0;
   padding: 0;
@@ -103,7 +164,7 @@ a {
 }
 
 /* change colours to suit your needs */
-/* line 95, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 152, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 ins {
   background-color: #ff9;
   color: #000;
@@ -111,7 +172,7 @@ ins {
 }
 
 /* change colours to suit your needs */
-/* line 102, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 159, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 mark {
   background-color: #ff9;
   color: #000;
@@ -119,25 +180,25 @@ mark {
   font-weight: bold;
 }
 
-/* line 109, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 166, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 113, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 170, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
   cursor: help;
 }
 
-/* line 118, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 175, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
-/* line 124, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 181, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 hr {
   display: block;
   height: 1px;
@@ -147,7 +208,7 @@ hr {
   padding: 0;
 }
 
-/* line 133, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 190, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 input, select {
   vertical-align: middle;
 }
@@ -175,7 +236,7 @@ input, select {
   /* line 19, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main {
     height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
     position: relative;
     width: 100%;
   }
@@ -245,6 +306,47 @@ input, select {
     content: "";
     display: table;
     clear: both;
+  }
+}
+
+@media only screen and (min-width: 35rem) {
+  /* line 4, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
+  body main div#content #desktop_schedule_table {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+  /* line 9, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
+  body main div#content #desktop_schedule_table th {
+    padding: 0.5rem;
+  }
+  /* line 13, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
+  body main div#content #desktop_schedule_table td {
+    padding: 0.5rem;
+  }
+  /* line 17, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
+  body main div#content #desktop_schedule_table tr:nth-child(2n+1) {
+    background-color: #B2DFDB;
+  }
+  /* line 21, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
+  body main div#content #desktop_schedule_table .week {
+    width: 20%;
+  }
+  /* line 25, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
+  body main div#content #desktop_schedule_table .topic {
+    width: 40%;
+  }
+  /* line 29, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
+  body main div#content #desktop_schedule_table .assigned {
+    width: 20%;
+  }
+  /* line 33, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
+  body main div#content #desktop_schedule_table .deadlines {
+    width: 20%;
+  }
+  /* line 39, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
+  body main div#content #mobile_schedule_grid {
+    display: none;
   }
 }
 

@@ -1,0 +1,44 @@
+body {
+	main {
+		div#content {
+			#desktop_schedule_table {
+				display: block;
+				text-align: left;
+				width: 100%;
+
+				th {
+					padding: 0.5rem;
+				}
+
+				td {
+					padding: 0.5rem;
+				}
+
+				tr:nth-child(2n+1) {
+					background-color: $primaryColorLight;
+				}
+
+				.week {
+					width: 20%;
+				}
+
+				.topic {
+					width: 40%;
+				}
+
+				.assigned {
+					width: 20%;
+				}
+
+				.deadlines {
+					width: 20%;
+				}
+
+			}
+
+			#mobile_schedule_grid {
+				display: none;
+			}
+		}
+	}
+}
