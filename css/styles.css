@@ -29,26 +29,27 @@ time, mark, audio, video {
 
 /* line 30, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body {
+  height: 100vh;
   line-height: 1;
 }
 
-/* line 34, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 35, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content {
   width: 100%;
 }
 
-/* line 37, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 38, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content #desktop_schedule_table {
   display: none;
 }
 
-/* line 41, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 42, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content #mobile_schedule_grid {
   display: block;
   width: 100%;
 }
 
-/* line 45, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 46, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content #mobile_schedule_grid .schedule_block {
   background-color: #B2DFDB;
   border-radius: 5%;
@@ -58,12 +59,12 @@ body main #content #mobile_schedule_grid .schedule_block {
   width: 95%;
 }
 
-/* line 53, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 54, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content #mobile_schedule_grid .schedule_block:last-child {
   margin-bottom: 0rem;
 }
 
-/* line 58, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 59, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content #mobile_schedule_grid .schedule_block .block_content h1 {
   margin: 0;
   margin-bottom: 0.5rem;
@@ -75,7 +76,7 @@ body main #content #mobile_schedule_grid .schedule_block .block_content h1 {
   background: transparent;
 }
 
-/* line 69, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 70, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content #mobile_schedule_grid .schedule_block .block_content h2 {
   margin: 0;
   padding: 0;
@@ -86,75 +87,75 @@ body main #content #mobile_schedule_grid .schedule_block .block_content h2 {
   background: transparent;
 }
 
-/* line 79, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 80, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content #mobile_schedule_grid .schedule_block .block_content h3 {
   font-weight: normal;
   margin-left: 1rem;
   margin-bottom: 0.5rem;
 }
 
-/* line 90, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 91, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav {
   background-color: #009688;
   height: 4rem;
 }
 
-/* line 95, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 96, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav div svg {
   height: 4rem;
   margin-left: 0.5rem;
   width: 4rem;
 }
 
-/* line 100, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 101, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav div svg path {
   fill: #FFFFFF;
 }
 
-/* line 105, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 106, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav div svg#hamburger_menu_icon {
   display: block;
 }
 
-/* line 109, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 110, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav div svg#close_hamburger_menu_icon {
   display: none;
 }
 
-/* line 115, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 116, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav#expanded_menu {
   display: none;
 }
 
-/* line 119, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 120, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav#hamburger_menu {
   display: block;
 }
 
-/* line 124, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 125, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 129, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 130, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 nav ul {
   list-style: none;
 }
 
-/* line 133, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 134, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 137, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 138, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 143, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 144, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 a {
   margin: 0;
   padding: 0;
@@ -164,7 +165,7 @@ a {
 }
 
 /* change colours to suit your needs */
-/* line 152, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 153, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 ins {
   background-color: #ff9;
   color: #000;
@@ -172,7 +173,7 @@ ins {
 }
 
 /* change colours to suit your needs */
-/* line 159, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 160, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 mark {
   background-color: #ff9;
   color: #000;
@@ -180,25 +181,25 @@ mark {
   font-weight: bold;
 }
 
-/* line 166, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 167, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 170, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 171, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
   cursor: help;
 }
 
-/* line 175, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 176, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
-/* line 181, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 182, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 hr {
   display: block;
   height: 1px;
@@ -208,7 +209,7 @@ hr {
   padding: 0;
 }
 
-/* line 190, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
+/* line 191, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 input, select {
   vertical-align: middle;
 }
@@ -236,27 +237,26 @@ input, select {
   /* line 19, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main {
     height: 100vh;
-    overflow-y: scroll;
     position: relative;
     width: 100%;
   }
-  /* line 25, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 24, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content {
     padding: 1.5rem;
     position: absolute;
     z-index: 0;
   }
-  /* line 30, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 29, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content h1 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
   }
-  /* line 35, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 34, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content h2 {
     font-size: 1.75rem;
     margin-top: 2rem;
   }
-  /* line 41, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 40, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu {
     background-color: #FFFFFF;
     position: absolute;
@@ -267,27 +267,27 @@ input, select {
     -webkit-transition: all .5s, -webkit-transform .5s;
     transition: all .5s, transform .5s;
   }
-  /* line 52, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 51, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul {
     font-size: 1.75rem;
     list-style: none;
     text-decoration: none;
   }
-  /* line 57, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 56, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul li {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
   }
-  /* line 62, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 61, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul li:last-child {
     padding-bottom: 1rem;
   }
-  /* line 66, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 65, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul li:first-child {
     padding-top: 1rem;
   }
-  /* line 73, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 72, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #shadow_div {
     background-color: #444444;
     height: 100vh;
@@ -301,7 +301,7 @@ input, select {
     -webkit-transition: all .5s, -webkit-transform .5s;
     transition: all .5s, transform .5s;
   }
-  /* line 90, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 89, C:/Users/taylor.herald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   .clearfix:after {
     content: "";
     display: table;
