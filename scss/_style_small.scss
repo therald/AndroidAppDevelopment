@@ -1,0 +1,94 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+/* apply a natural box layout model to all elements */
+* {
+	-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body {
+	color: $primaryTextColor;
+	font-family: $defaultFont;
+	font-size: 16px;
+
+	main {
+		height: 100vh;
+    	overflow: scroll;
+        position: relative;
+		width: 100%;
+
+    	#content {
+    		padding: 1.5rem;
+	        position: absolute;
+	        z-index: 0;
+
+    		h1 {
+	    		font-size: 3rem;
+	    		margin-bottom: 1.5rem;
+	    	}
+
+	    	h2 {
+	    		font-size: 1.75rem;
+	    		margin-top: 2rem;
+    		}
+    	}
+
+    	#menu {
+    		background-color: #FFFFFF;
+	        position: absolute;
+	        top: -100%;
+	        width: 100%;
+	        z-index: 2;
+
+	        transition-timing-function: ease-out;
+	        -webkit-transition: all .5s, -webkit-transform .5s;
+	        transition: all .5s, transform .5s;
+
+	        ul {
+	            font-size: 1.75rem;
+	            list-style: none;
+	            text-decoration: none;
+
+	            li {
+	            	padding-top: 0.5rem;
+	            	padding-bottom: 0.5rem;
+	            	padding-left: 1rem;
+
+	            	&:last-child {
+	            		padding-bottom: 1rem;
+	            	}
+
+	            	&:first-child {
+	            		padding-top: 1rem;
+	            	}
+	            }
+	        }
+    	}
+
+    	#shadow_div {
+    		background-color: #444444;
+	        height: 100vh;
+	        padding: 0px;
+	        margin: 0px;
+	        opacity: 0;
+	        position: absolute;
+	        width: 100%;
+	        z-index: -1;
+
+	        transition-timing-function: ease-out;
+	        -webkit-transition: all .5s, -webkit-transform .5s;
+	        transition: all .5s, transform .5s;
+    	}
+	}
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}

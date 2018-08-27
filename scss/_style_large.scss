@@ -1,0 +1,21 @@
+body {
+    nav#expanded_menu {
+        display: block;
+        padding-top: 1.125rem;
+
+        a {
+            color: $textIconColor;
+            font-size: 1.75rem;
+            margin-left: 3rem;
+            text-decoration: none;
+
+            &:first-child {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    nav#hamburger_menu {
+        display: none;
+    }
+}
