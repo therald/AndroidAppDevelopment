@@ -62,7 +62,7 @@ function toggleHamburgerMenuIcon() {
 		close.style.display = 'block';
 
 		var menu = document.getElementById("menu");
-		menu.style.top = "0%";
+		menu.style.top = "4rem";
 	}
 	else {
 		open.style.display = 'block';
