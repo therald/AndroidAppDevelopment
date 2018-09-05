@@ -264,38 +264,46 @@ input, select {
     margin-top: 2rem;
   }
   /* line 46, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  body main #content h2.studios {
+    margin-top: 0rem;
+  }
+  /* line 50, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content ul {
     margin-left: 2rem;
     margin-top: 1rem;
   }
-  /* line 50, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 54, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content ul li {
     margin-bottom: 1rem;
   }
-  /* line 56, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 60, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #code_gists h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
-  /* line 61, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 65, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #code_gists h2 {
     font-weight: normal;
     margin-top: 1rem;
   }
-  /* line 67, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 71, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #useful_links {
     margin-top: 2rem;
   }
-  /* line 70, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 74, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #useful_links h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
-  /* line 76, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 80, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  body main #content .prompt_text {
+    margin-top: 1rem;
+  }
+  /* line 84, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #reminders {
     padding-bottom: 1rem;
   }
-  /* line 81, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 89, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu {
     background-color: #FFFFFF;
     position: absolute;
@@ -306,27 +314,27 @@ input, select {
     -webkit-transition: all .5s, -webkit-transform .5s;
     transition: all .5s, transform .5s;
   }
-  /* line 92, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 100, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul {
     font-size: 1.75rem;
     list-style: none;
     text-decoration: none;
   }
-  /* line 97, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 105, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul li {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
   }
-  /* line 102, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 110, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul li:last-child {
     padding-bottom: 1rem;
   }
-  /* line 106, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 114, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul li:first-child {
     padding-top: 1rem;
   }
-  /* line 113, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 121, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #shadow_div {
     background-color: #444444;
     height: 100vh;
@@ -340,7 +348,7 @@ input, select {
     -webkit-transition: all .5s, -webkit-transform .5s;
     transition: all .5s, transform .5s;
   }
-  /* line 130, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 138, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   .clearfix:after {
     content: "";
     display: table;
