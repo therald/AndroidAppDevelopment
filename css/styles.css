@@ -277,33 +277,38 @@ input, select {
     margin-bottom: 1rem;
   }
   /* line 60, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  body main #content #code_from_class h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  /* line 67, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #code_gists h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
-  /* line 65, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 72, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #code_gists h2 {
     font-weight: normal;
     margin-top: 1rem;
   }
-  /* line 71, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 78, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #useful_links {
     margin-top: 2rem;
   }
-  /* line 74, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 81, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #useful_links h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
-  /* line 80, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 87, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content .prompt_text {
     margin-top: 1rem;
   }
-  /* line 84, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 91, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #reminders {
     padding-bottom: 1rem;
   }
-  /* line 89, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 96, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu {
     background-color: #FFFFFF;
     position: absolute;
@@ -314,27 +319,27 @@ input, select {
     -webkit-transition: all .5s, -webkit-transform .5s;
     transition: all .5s, transform .5s;
   }
-  /* line 100, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 107, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul {
     font-size: 1.75rem;
     list-style: none;
     text-decoration: none;
   }
-  /* line 105, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 112, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul li {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
   }
-  /* line 110, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 117, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul li:last-child {
     padding-bottom: 1rem;
   }
-  /* line 114, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 121, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul li:first-child {
     padding-top: 1rem;
   }
-  /* line 121, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 128, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #shadow_div {
     background-color: #444444;
     height: 100vh;
@@ -348,7 +353,7 @@ input, select {
     -webkit-transition: all .5s, -webkit-transform .5s;
     transition: all .5s, transform .5s;
   }
-  /* line 138, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  /* line 145, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   .clearfix:after {
     content: "";
     display: table;
