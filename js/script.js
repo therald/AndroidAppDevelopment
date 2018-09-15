@@ -37,7 +37,7 @@ function begin() {
 		toggleHamburgerMenuIconClosed();
 		navigateToPage(this);
 	};
-
+	
 	return false;
 }
 

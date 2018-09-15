@@ -1,4 +1,34 @@
 body {
+    main {
+        div#content {
+            .screenshot_container {
+                .screenshot_with_label {
+                    display: inline-block;
+                    float: unset;
+                    margin: 0rem 2rem 2rem 2rem;
+                    width: 15rem;
+
+                    &:nth-child(2n) {
+                        float: unset;
+                    }
+
+
+                    label {
+                        display: block;
+                        margin-top: 0.5rem;
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                    .screenshot {
+                        width: 100%;
+
+                    }
+                }
+            }
+        }
+    }
+
     nav#expanded_menu {
         display: block;
         padding-top: 1.125rem;

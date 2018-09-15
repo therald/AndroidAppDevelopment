@@ -41,6 +41,33 @@ body {
 			#mobile_schedule_grid {
 				display: none;
 			}
+
+			.screenshot_container {
+				display: inline-block;
+				
+    			.screenshot_with_label {
+    				float: left;
+    				margin: auto;
+    				margin-bottom: 2rem;
+    				width: 45%;
+
+    				&:nth-child(2n) {
+    					float: right;
+    				}
+
+    				label {
+    					display: block;
+    					margin-top: 0.5rem;
+    					text-align: center;
+    					width: 100%;
+    				}
+
+    				.screenshot {
+    					width: 100%;
+
+    				}
+    			}
+    		}
 		}
 	}
 }

@@ -91,6 +91,29 @@ body {
     		#reminders {
     			padding-bottom: 1rem;
     		}
+
+    		.screenshot_container {
+    			margin-top: 1rem;
+    			width: 100%;
+
+    			.screenshot_with_label {
+    				margin: auto;
+    				margin-bottom: 2rem;
+    				width: 90%;
+
+    				label {
+    					display: block;
+    					margin-top: 0.5rem;
+    					text-align: center;
+    					width: 100%;
+    				}
+
+    				.screenshot {
+    					width: 100%;
+
+    				}
+    			}
+    		}
     	}
 
     	#menu {
@@ -139,6 +162,13 @@ body {
 	        -webkit-transition: all .5s, -webkit-transform .5s;
 	        transition: all .5s, transform .5s;
     	}
+	}
+
+	pre code {
+		background-color: #eee;
+		border: 1px solid #999;
+		display: block;
+		padding: 20px;
 	}
 }
 

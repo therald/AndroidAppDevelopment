@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../../css/styles.css">
+		<script src="../../js/script.js"></script>
+		<title>Android Application Development</title>
+	</head>
+	<body>
+		<!---------------------------------------------------------------------------------------------------------------->
+		<!---------------------------------------------------  NAV  ------------------------------------------------------>
+		<!---------------------------------------------------------------------------------------------------------------->
+		<nav id="expanded_menu">
+			<a href="../../" id="nav_overview" class="nav_item">Overview</a>
+			<a href="../../schedule/" id="nav_schedule" class="nav_item">Schedule</a>
+			<a href="../../projects/" id="nav_projects" class="nav_item selected">Projects</a>
+			<a href="../../resources/" id="nav_resources" class="nav_item">Resources</a>
+		</nav>
+		<nav id="hamburger_menu">
+			<div>
+				<svg id="hamburger_menu_icon" viewBox="0 0 24 24">
+					<path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+				</svg>
+				<svg id="close_hamburger_menu_icon" viewBox="0 0 24 24">
+				    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+				</svg>
+			</div>
+		</nav>
+
+
+		<!---------------------------------------------------------------------------------------------------------------->
+		<!---------------------------------------------------  MAIN  ----------------------------------------------------->
+		<!---------------------------------------------------------------------------------------------------------------->
+		<main>
+			<div id="content">
+				<h1>Studio 1: Blackjack</h1>
+
+				<h2>Rules of the Game:</h2>
+				<ul>
+					<li>There are two groups: the dealer and player(s)</li>
+					<li>The object of the game is to get the highest score possible without exceeding 21</li>
+					<li>If the dealer scores 21, he/she automatically wins even though a player may also have a score of 21</li>
+					<li>All number cards are worth their value</li>
+					<li>Kings, Queens, and Jacks are each worth 10 points</li>
+					<li>An ace may either be considered 11 points or 1 point</li>
+					<li>Each player begins with two cards</li>
+					<li>When a player "Hits", they are given another card</li>
+					<li>When a player "Passes", they are no longer able to hit until the round is over</li>
+				</ul>
+
+				<h2>Prompt</h2>
+				<p class="prompt_text">
+					The goal of this studio is to make a simple game of Blackjack. The dealer will be simply coded to hit if their score is under 17. You, the player, will be the only other participant of the game.<br><br>
+					When the game begins, your two cards will both be visible to you, but only the second of the dealer's cards will be visible. There should be a button to "Hit" and a button to "Pass". When a player "Hits" and the game does not end, the player should have three cards shown; if the game does end, a message should display informing the user that he/she has "Busted!". When a player "Passes", all dealer cards (new or old) should be revealed to the player, and a message should display either "You Win!" or "Dealer Wins!" depending on the situation. Regardless, upon ending the game, there should be a button to request "New Game?".
+				</p>
+
+				<h2>Details</h2>
+				<p class="prompt_text">
+					Your app should consist of the files in the structure shown in the screenshot below for "File Structure". To start, you need to set up your resource files in the "res" directory. First, I would download the images.zip file under the "Resources" section toward the bottom of this page, unzip the file, and copy the images into the "drawable" folder under "res".
+					<br><br>
+					Next, I would set up all values necessary in the "values" directory under "res". The "strings" directory should contain the following:
+					<pre>
+						<code>
+							&#x3C;resources&#x3E;
+							    &#x3C;string name=&#x22;app_name&#x22;&#x3E;Blackjack&#x3C;/string&#x3E;
+							    &#x3C;string name=&#x22;intro_image&#x22;&#x3E;Intro Image&#x3C;/string&#x3E;
+							    &#x3C;string name=&#x22;blackjack&#x22;&#x3E;Blackjack&#x3C;/string&#x3E;
+							    &#x3C;string name=&#x22;pass&#x22;&#x3E;Pass&#x3C;/string&#x3E;
+							    &#x3C;string name=&#x22;hit&#x22;&#x3E;Hit&#x3C;/string&#x3E;
+							    &#x3C;string name=&#x22;textview&#x22;&#x3E;TextView&#x3C;/string&#x3E;
+							    &#x3C;string name=&#x22;new_game&#x22;&#x3E;New Game?&#x3C;/string&#x3E;
+							    &#x3C;string name=&#x22;player_card&#x22;&#x3E;player card&#x3C;/string&#x3E;
+							    &#x3C;string name=&#x22;dealer_card&#x22;&#x3E;dealer card&#x3C;/string&#x3E;
+							    &#x3C;string name=&#x22;busted&#x22;&#x3E;Busted!&#x3C;/string&#x3E;
+							    &#x3C;string name=&#x22;dealer_wins&#x22;&#x3E;Dealer Wins!&#x3C;/string&#x3E;
+							    &#x3C;string name=&#x22;you_win&#x22;&#x3E;You win!&#x3C;/string&#x3E;
+							&#x3C;/resources&#x3E;
+						</code>
+					</pre>
+					Then, I would create a new file called "dimens.xml" under the "res" directory. to this, I would add some margins and sizes that you may repeat for the layout files. I included the below:
+					<pre>
+						<code>
+							&#x3C;resources&#x3E;
+							    &#x3C;!-- Default screen margins, per the Android Design guidelines. --&#x3E;
+							    &#x3C;dimen name=&#x22;activity_horizontal_margin&#x22;&#x3E;16dp&#x3C;/dimen&#x3E;
+							    &#x3C;dimen name=&#x22;activity_vertical_margin&#x22;&#x3E;16dp&#x3C;/dimen&#x3E;
+							&#x3C;/resources&#x3E;
+						</code>
+					</pre>
+					Now, we can look at the two layout files: "activity_main.xml" and "activity_game.xml".
+					<br>
+					<br>
+					The "activity_main.xml" file should really only need to contain the surrounding layout with a large image view (make sure that it is clickable="true"!) to display the splashscreen image shown below and a TextView to show the name of the game, "Blackjack".
+					<br>
+					<br>
+					The "activity_game.xlm" file will be a little more complicated. It will consist of some surrounding layout, and inside that layout you will need a layout for the Player, a layout for the Dealer, a TextView for the score, and a Restart Button defaulted to be invisible. Inside each of the Player and Dealer layouts, I would create a horizontal LinearLayout to display the cards for each. These card slots will be ImageViews, and for simplicity just give each player 5 slots (there should rarely ever be more than that needed). Assign ids to these ImageViews to be able to reference them in the Kotlin files. Lastly, for the Player layout, you will need to add a second LinearLayout for the buttons. Each Button will have an id, one for Passing and one for Hitting.
+					<br>
+					<br>
+					The MainActivity.kt file will initially load up the "activity_main.xml" file. Here, just copy and paste the code below into the onCreate method after the content view has been set:
+					<pre>
+						<code>
+							//Set up ImageView and and Intent for main game
+						        val intent = Intent(this, Game::class.java)
+
+						        //Set up the ImageView to respond to touch
+						        {yourIdforImageView}.setOnClickListener {
+					                	startActivity(intent)
+						        }
+						</code>
+					</pre>
+					The next thing to create will be the Player model. This class will consist of three global variables (a count for the number of aces the player has, a total score, and an ArrayList to hold the resource ids for the cards that a player has) and three methods (getTotal, bust, and addCard).
+					<br>
+					<br>
+					The CardRandomizer will really only need to consist of one method that returns an ArrayList&#x3C;Int&#x3E; that contains the resource ids for the card image files in a randomized order.
+					<br>
+					<br>
+					Finally, the last file to implement is the Game.kt file. Along with the onCreate method, there should also be methods for playerHit, declareWinner, restartGame, and showEndGameButtons. The onCreate method should call the CardRandomizer method to get the ArrayList of resource ids and store them in a global variable, set up click event listeners on the buttons, initialize global arrays for the Player and Dealer cards using the ids from the layout view, deal the Player and Dealer each two cards (this should remove that card from the cardList as well as add that card to the Player or Dealer list), hide the dealer's first card using the image resource for the back of the card, and set the initial score for the player.
+					<br>
+					<br>
+					The playerHit method should be called on the click event that the user taps the "Hit" button. This code should be fairly similar to the code that initially deals the first four cards. It should also update the player's score.
+					<br>
+					<br>
+					The declareWinner method should be called on the click event that the user taps the "Pass" button. This code should cause the Dealer to "Hit" in order to build up his card list. The Dealer should only hit when the Dealer's score is below 17. After that, compare scores between the Dealer and Player to determine the winner and display some text based on the outcome, as well as display the end game buttons.
+					<br>
+					<br>
+					The showEndGameButtons should be very simple to implement. It should just hide the "Pass" and "Hit" buttons and show the "New Game?" button.
+				</p>
+
+				<h2>Screenshots</h2>
+				<div class="screenshot_container">
+					<div class="screenshot_with_label">
+						<img class="screenshot" src="img/FileStructure.png">
+						<label>File Structure</label>
+					</div>
+					<div class="screenshot_with_label">
+						<img class="screenshot" src="img/Splashscreen.jpg">
+						<label>Splashscreen</label>
+					</div>
+					<div class="screenshot_with_label">
+						<img class="screenshot" src="img/StartOfGame.jpg">
+						<label>Start of Game</label>
+					</div>
+					<div class="screenshot_with_label">
+						<img class="screenshot" src="img/HitAndBusted.jpg">
+						<label>Hit and Busted</label>
+					</div>
+					<div class="screenshot_with_label">
+						<img class="screenshot" src="img/HitSuccessful.jpg">
+						<label>Hit Successful</label>
+					</div>
+					<div class="screenshot_with_label">
+						<img class="screenshot" src="img/Hit2Successful.jpg">
+						<label>Another Successful Hit</label>
+					</div>
+					<div class="screenshot_with_label">
+						<img class="screenshot" src="img/YouWin.jpg">
+						<label>You Win</label>
+					</div>
+					<div class="screenshot_with_label">
+						<img class="screenshot" src="img/PassAndDealerBusts.jpg">
+						<label>Pass and Dealer Busts</label>
+					</div>
+					<div class="screenshot_with_label">
+						<img class="screenshot" src="img/DealerWins.jpg">
+						<label>Dealer Wins</label>
+					</div>
+				</div>
+
+				<h2>Resources</h2>
+				<p class="prompt_text">
+					<a href="./images.zip">Card Images</a>
+				</p>
+
+				<h2>Submission</h2>
+				<p class="prompt_text">
+					Each of you will create a <b>PRIVATE</b> GitHub repository and share it with me. This way if you also have trouble along the way it can make it easier for me to view your code remotely.
+				</p>
+			</div>
+
+			<div id="shadow_div"></div>
+
+
+			<div id="menu">
+				<ul>
+					<li id="overview_menu_item" class="nav_overview">Overview</li>
+					<li id="schedule_menu_item" class="nav_schedule">Schedule</li>
+					<li id="projects_menu_item" class="nav_projects">Projects</li>
+					<li id="resources_menu_item" class="nav_resources">Resources</li>
+				</ul>
+			</div>
+		</main>
+
+	</body>
+</html>
