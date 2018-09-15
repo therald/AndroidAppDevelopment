@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../../css/styles.css">
+		<script src="../../js/script.js"></script>
+		<title>Android Application Development</title>
+	</head>
+	<body>
+		<!---------------------------------------------------------------------------------------------------------------->
+		<!---------------------------------------------------  NAV  ------------------------------------------------------>
+		<!---------------------------------------------------------------------------------------------------------------->
+		<nav id="expanded_menu">
+			<a href="../../" id="nav_overview" class="nav_item">Overview</a>
+			<a href="../../schedule/" id="nav_schedule" class="nav_item">Schedule</a>
+			<a href="../../projects/" id="nav_projects" class="nav_item selected">Projects</a>
+			<a href="../../resources/" id="nav_resources" class="nav_item">Resources</a>
+		</nav>
+		<nav id="hamburger_menu">
+			<div>
+				<svg id="hamburger_menu_icon" viewBox="0 0 24 24">
+					<path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+				</svg>
+				<svg id="close_hamburger_menu_icon" viewBox="0 0 24 24">
+				    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+				</svg>
+			</div>
+		</nav>
+
+
+		<!---------------------------------------------------------------------------------------------------------------->
+		<!---------------------------------------------------  MAIN  ----------------------------------------------------->
+		<!---------------------------------------------------------------------------------------------------------------->
+		<main>
+			<div id="content">
+				<h1>Studio 1: Hangman</h1>
+
+				<h2>Rules of the Game:</h2>
+				<ul>
+					<li>A random word is selected as the word to discover</li>
+					<li>The player is shown a blank space for each letter of the random word</li>
+					<li>The player takes turns guessing letters that the word might contain; if the word contains the letter, every instance of the letter in the word is revealed; if the word does not contain the letter, the number of guesses is decremented</li>
+					<li>The player starts with 10 guesses</li>
+				</ul>
+
+				<h2>Prompt</h2>
+				<p class="prompt_text">
+					The goal of this studio is to make a simple game of Hangman. The player will make guesses as to what the word is one character at a time until either the full word is revealed or the player runs out of guesses and loses the game (upon which the word should also be fully revealed).
+				</p>
+
+				<h2>Details</h2>
+				<p class="prompt_text">
+					For the "activity_main.xml" file, there will need to be one surrounding layout; inside this layout, there should be a TextView that contains the random word, an EditText field to make guesses, a Button to submit those guesses (and to also function as restart button), and a TextView showing the number of remaining guesses. All four elements should have an id associated with them in order to access them from the MainActivity.kt file.
+					<pre>
+						<code>
+val words: Array<String> = arrayOf(
+   "acres", "adult", "advice", "arrangement", "attempt",
+   "August", "Autumn", "border", "breeze", "brick", "calm",
+   "canal", "Casey", "cast", "chose", "claws", "coach",
+   "constantly", "contrast", "cookies", "customs", "damage",
+   "Danny", "deeply", "depth", "discussion", "doll", "donkey",
+   "Egypt", "Ellen", "essential", "exchange", "exist",
+   "explanation", "facing", "film", "finest", "fireplace",
+   "floating", "folks", "fort", "garage", "grabbed", "grandmother",
+   "habit", "happily", "Harry", "heading", "hunter", "Illinois",
+   "image", "independent", "instant", "January", "kids", "label",
+   "Lee", "lungs", "manufacturing", "Martin", "mathematics", "melted",
+   "memory", "mill", "mission", "monkey", "Mount", "mysterious",
+   "neighborhood", "Norway", "nuts", "occasionally", "official",
+   "ourselves", "palace", "Pennsylvania", "Philadelphia", "plates",
+   "poetry", "policeman", "positive", "possibly", "practical", "pride",
+   "promised", "recall", "relationship", "remarkable", "require", "rhyme",
+   "rocky", "rubbed", "rush", "sale", "satellites", "satisfied", "scared",
+   "selection", "shake", "shaking", "shallow", "shout", "silly", "simplest",
+   "slight", "slip", "slope", "soap", "solar", "species", "spin", "stiff",
+   "swung", "tales", "thumb", "tobacco", "toy", "trap", "treated", "tune",
+   "University", "vapor", "vessels", "wealth", "wolf", "zoo"
+)
+						</code>
+					</pre>
+					
+					For the MainActivity.kt file, you will only need the onCreate method and two global variables, one for the number of guesses and one boolean for whether or not the game is over. You may throw the array of words below into the onCreate method, set up a random number generator to select a random index in the array. Lastly, there will need to be a click event listener for the guess/restart button that will use logic based on the global boolean to designate what should happen. If the game is not over, then there should be a check for whether or not the letter submitted is contained within the word and update the UI. If the game is over, the following code should be executed:
+					<pre>
+						<code>
+finish()
+startActivity(intent)
+						</code>
+					</pre>
+				</p>
+
+				<h2>Submission</h2>
+				<p class="prompt_text">
+					Each of you will create a <b>PRIVATE</b> GitHub repository and share it with me.
+				</p>
+			</div>
+
+			<div id="shadow_div"></div>
+
+
+			<div id="menu">
+				<ul>
+					<li id="overview_menu_item" class="nav_overview">Overview</li>
+					<li id="schedule_menu_item" class="nav_schedule">Schedule</li>
+					<li id="projects_menu_item" class="nav_projects">Projects</li>
+					<li id="resources_menu_item" class="nav_resources">Resources</li>
+				</ul>
+			</div>
+		</main>
+
+	</body>
+</html>

@@ -51,7 +51,7 @@
 
 				<h2>Prompt</h2>
 				<p class="prompt_text">
-					The goal of this studio is to make a simple game of Blackjack. The dealer will be simply coded to hit if their score is under 17. You, the player, will be the only other participant of the game.<br><br>
+					The goal of this project is to make a simple game of Blackjack. The dealer will be simply coded to hit if their score is under 17. You, the player, will be the only other participant of the game.<br><br>
 					When the game begins, your two cards will both be visible to you, but only the second of the dealer's cards will be visible. There should be a button to "Hit" and a button to "Pass". When a player "Hits" and the game does not end, the player should have three cards shown; if the game does end, a message should display informing the user that he/she has "Busted!". When a player "Passes", all dealer cards (new or old) should be revealed to the player, and a message should display either "You Win!" or "Dealer Wins!" depending on the situation. Regardless, upon ending the game, there should be a button to request "New Game?".
 				</p>
 
@@ -62,30 +62,30 @@
 					Next, I would set up all values necessary in the "values" directory under "res". The "strings" directory should contain the following:
 					<pre>
 						<code>
-							&#x3C;resources&#x3E;
-							    &#x3C;string name=&#x22;app_name&#x22;&#x3E;Blackjack&#x3C;/string&#x3E;
-							    &#x3C;string name=&#x22;intro_image&#x22;&#x3E;Intro Image&#x3C;/string&#x3E;
-							    &#x3C;string name=&#x22;blackjack&#x22;&#x3E;Blackjack&#x3C;/string&#x3E;
-							    &#x3C;string name=&#x22;pass&#x22;&#x3E;Pass&#x3C;/string&#x3E;
-							    &#x3C;string name=&#x22;hit&#x22;&#x3E;Hit&#x3C;/string&#x3E;
-							    &#x3C;string name=&#x22;textview&#x22;&#x3E;TextView&#x3C;/string&#x3E;
-							    &#x3C;string name=&#x22;new_game&#x22;&#x3E;New Game?&#x3C;/string&#x3E;
-							    &#x3C;string name=&#x22;player_card&#x22;&#x3E;player card&#x3C;/string&#x3E;
-							    &#x3C;string name=&#x22;dealer_card&#x22;&#x3E;dealer card&#x3C;/string&#x3E;
-							    &#x3C;string name=&#x22;busted&#x22;&#x3E;Busted!&#x3C;/string&#x3E;
-							    &#x3C;string name=&#x22;dealer_wins&#x22;&#x3E;Dealer Wins!&#x3C;/string&#x3E;
-							    &#x3C;string name=&#x22;you_win&#x22;&#x3E;You win!&#x3C;/string&#x3E;
-							&#x3C;/resources&#x3E;
+&#x3C;resources&#x3E;
+    &#x3C;string name=&#x22;app_name&#x22;&#x3E;Blackjack&#x3C;/string&#x3E;
+    &#x3C;string name=&#x22;intro_image&#x22;&#x3E;Intro Image&#x3C;/string&#x3E;
+    &#x3C;string name=&#x22;blackjack&#x22;&#x3E;Blackjack&#x3C;/string&#x3E;
+    &#x3C;string name=&#x22;pass&#x22;&#x3E;Pass&#x3C;/string&#x3E;
+    &#x3C;string name=&#x22;hit&#x22;&#x3E;Hit&#x3C;/string&#x3E;
+    &#x3C;string name=&#x22;textview&#x22;&#x3E;TextView&#x3C;/string&#x3E;
+    &#x3C;string name=&#x22;new_game&#x22;&#x3E;New Game?&#x3C;/string&#x3E;
+    &#x3C;string name=&#x22;player_card&#x22;&#x3E;player card&#x3C;/string&#x3E;
+    &#x3C;string name=&#x22;dealer_card&#x22;&#x3E;dealer card&#x3C;/string&#x3E;
+    &#x3C;string name=&#x22;busted&#x22;&#x3E;Busted!&#x3C;/string&#x3E;
+    &#x3C;string name=&#x22;dealer_wins&#x22;&#x3E;Dealer Wins!&#x3C;/string&#x3E;
+    &#x3C;string name=&#x22;you_win&#x22;&#x3E;You win!&#x3C;/string&#x3E;
+&#x3C;/resources&#x3E;
 						</code>
 					</pre>
 					Then, I would create a new file called "dimens.xml" under the "res" directory. to this, I would add some margins and sizes that you may repeat for the layout files. I included the below:
 					<pre>
 						<code>
-							&#x3C;resources&#x3E;
-							    &#x3C;!-- Default screen margins, per the Android Design guidelines. --&#x3E;
-							    &#x3C;dimen name=&#x22;activity_horizontal_margin&#x22;&#x3E;16dp&#x3C;/dimen&#x3E;
-							    &#x3C;dimen name=&#x22;activity_vertical_margin&#x22;&#x3E;16dp&#x3C;/dimen&#x3E;
-							&#x3C;/resources&#x3E;
+&#x3C;resources&#x3E;
+    &#x3C;!-- Default screen margins, per the Android Design guidelines. --&#x3E;
+    &#x3C;dimen name=&#x22;activity_horizontal_margin&#x22;&#x3E;16dp&#x3C;/dimen&#x3E;
+    &#x3C;dimen name=&#x22;activity_vertical_margin&#x22;&#x3E;16dp&#x3C;/dimen&#x3E;
+&#x3C;/resources&#x3E;
 						</code>
 					</pre>
 					Now, we can look at the two layout files: "activity_main.xml" and "activity_game.xml".
@@ -100,13 +100,13 @@
 					The MainActivity.kt file will initially load up the "activity_main.xml" file. Here, just copy and paste the code below into the onCreate method after the content view has been set:
 					<pre>
 						<code>
-							//Set up ImageView and and Intent for main game
-						        val intent = Intent(this, Game::class.java)
+//Set up ImageView and and Intent for main game
+val intent = Intent(this, Game::class.java)
 
-						        //Set up the ImageView to respond to touch
-						        {yourIdforImageView}.setOnClickListener {
-					                	startActivity(intent)
-						        }
+//Set up the ImageView to respond to touch
+{yourIdforImageView}.setOnClickListener {
+    	startActivity(intent)
+}
 						</code>
 					</pre>
 					The next thing to create will be the Player model. This class will consist of three global variables (a count for the number of aces the player has, a total score, and an ArrayList to hold the resource ids for the cards that a player has) and three methods (getTotal, bust, and addCard).
