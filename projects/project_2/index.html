@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="../../css/styles.css">
+		<script src="../../js/script.js"></script>
+		<title>Android Application Development</title>
+	</head>
+	<body>
+		<!---------------------------------------------------------------------------------------------------------------->
+		<!---------------------------------------------------  NAV  ------------------------------------------------------>
+		<!---------------------------------------------------------------------------------------------------------------->
+		<nav id="expanded_menu">
+			<a href="../../" id="nav_overview" class="nav_item">Overview</a>
+			<a href="../../schedule/" id="nav_schedule" class="nav_item">Schedule</a>
+			<a href="../../projects/" id="nav_projects" class="nav_item selected">Projects</a>
+			<a href="../../resources/" id="nav_resources" class="nav_item">Resources</a>
+		</nav>
+		<nav id="hamburger_menu">
+			<div>
+				<svg id="hamburger_menu_icon" viewBox="0 0 24 24">
+					<path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+				</svg>
+				<svg id="close_hamburger_menu_icon" viewBox="0 0 24 24">
+				    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+				</svg>
+			</div>
+		</nav>
+
+
+		<!---------------------------------------------------------------------------------------------------------------->
+		<!---------------------------------------------------  MAIN  ----------------------------------------------------->
+		<!---------------------------------------------------------------------------------------------------------------->
+		<main>
+			<div id="content">
+				<h1>Project 2: To-Do List</h1>
+
+				<h2>Prompt</h2>
+				<p class="prompt_text">
+					The goal of this project is to make an app that allows a user to keep track of things they need to do/accomplish. This data should be stored in a SQLite database on the device. I have not included an User Interface components in this lab because I want you to experiment a little in how you think about displaying the data to a user.
+				</p>
+
+				<h2>Requirements</h2>
+				<ul>
+					<li>MainActivity.kt holds a list of To-Do items</li>
+					<li>CategoryActivity.kt holds a list of Categories</li>
+					<li>ToDoActivity.kt contains a view capable of creating/editing a to-do item</li>
+					<ul>
+						<li>User should be able to give the item a title</li>
+						<li>User should be able to give the item a category</li>
+						<li>User should be able to give the item a body of detail text</li>
+						<li>User should be able to give the item a deadline/due date</li>
+						<li>User should be able to assign a level of importance</li>
+					</ul>
+					<li>User should easily be able to delete a to-do item</li>
+					<li>User should be able to "check off" or complete a to do</li>
+					<li>User should easily be able to distinguish between completed and incomplete to-do items</li>
+					<li>User should be able to sort the list of incomplete to-do items by deadline/due date, importance, or alphabetical by title</li>
+					<li>Completed to-do items should be sorted by date/time completed</li>
+				</ul>
+
+				<h2>Submission</h2>
+				<p class="prompt_text">
+					Each of you will create a <b>PRIVATE</b> GitHub repository and share it with me AND Bill Siever. This way if you also have trouble along the way it can make it easier for me to view your code remotely.
+				</p>
+			</div>
+
+			<div id="shadow_div"></div>
+
+			<div id="menu">
+				<ul>
+					<li id="overview_menu_item" class="nav_overview">Overview</li>
+					<li id="schedule_menu_item" class="nav_schedule">Schedule</li>
+					<li id="projects_menu_item" class="nav_projects">Projects</li>
+					<li id="resources_menu_item" class="nav_resources">Resources</li>
+				</ul>
+			</div>
+		</main>
+
+	</body>
+</html>

@@ -5,7 +5,6 @@ Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com 
 Twitter: @rich_clark
 */
-/* line 9, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -27,29 +26,24 @@ time, mark, audio, video {
   background: transparent;
 }
 
-/* line 30, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body {
   height: 100vh;
   line-height: 1;
 }
 
-/* line 35, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content {
   width: 100%;
 }
 
-/* line 38, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content #desktop_schedule_table {
   display: none;
 }
 
-/* line 42, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content #mobile_schedule_grid {
   display: block;
   width: 100%;
 }
 
-/* line 46, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content #mobile_schedule_grid .schedule_block {
   background-color: #B2DFDB;
   border-radius: 5%;
@@ -59,12 +53,10 @@ body main #content #mobile_schedule_grid .schedule_block {
   width: 95%;
 }
 
-/* line 54, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content #mobile_schedule_grid .schedule_block:last-child {
   margin-bottom: 0rem;
 }
 
-/* line 59, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content #mobile_schedule_grid .schedule_block .block_content h1 {
   margin: 0;
   margin-bottom: 0.5rem;
@@ -76,7 +68,6 @@ body main #content #mobile_schedule_grid .schedule_block .block_content h1 {
   background: transparent;
 }
 
-/* line 70, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content #mobile_schedule_grid .schedule_block .block_content h2 {
   margin: 0;
   padding: 0;
@@ -87,75 +78,62 @@ body main #content #mobile_schedule_grid .schedule_block .block_content h2 {
   background: transparent;
 }
 
-/* line 80, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body main #content #mobile_schedule_grid .schedule_block .block_content h3 {
   font-weight: normal;
   margin-left: 1rem;
   margin-bottom: 0.5rem;
 }
 
-/* line 91, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav {
   background-color: #009688;
   height: 4rem;
 }
 
-/* line 96, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav div svg {
   height: 4rem;
   margin-left: 0.5rem;
   width: 4rem;
 }
 
-/* line 101, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav div svg path {
   fill: #FFFFFF;
 }
 
-/* line 106, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav div svg#hamburger_menu_icon {
   display: block;
 }
 
-/* line 110, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav div svg#close_hamburger_menu_icon {
   display: none;
 }
 
-/* line 116, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav#expanded_menu {
   display: none;
 }
 
-/* line 120, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 body nav#hamburger_menu {
   display: block;
 }
 
-/* line 125, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 130, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 nav ul {
   list-style: none;
 }
 
-/* line 134, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 138, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 144, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 a {
   margin: 0;
   padding: 0;
@@ -165,7 +143,6 @@ a {
 }
 
 /* change colours to suit your needs */
-/* line 153, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 ins {
   background-color: #ff9;
   color: #000;
@@ -173,7 +150,6 @@ ins {
 }
 
 /* change colours to suit your needs */
-/* line 160, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 mark {
   background-color: #ff9;
   color: #000;
@@ -181,25 +157,21 @@ mark {
   font-weight: bold;
 }
 
-/* line 167, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 171, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
   cursor: help;
 }
 
-/* line 176, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
-/* line 182, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 hr {
   display: block;
   height: 1px;
@@ -209,128 +181,111 @@ hr {
   padding: 0;
 }
 
-/* line 191, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_reset.scss */
 input, select {
   vertical-align: middle;
 }
 
 @media only screen and (min-width: 20rem) {
   /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
-  /* line 2, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
   }
   /* apply a natural box layout model to all elements */
-  /* line 8, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   * {
     -box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
   }
-  /* line 14, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body {
     color: #212121;
     font-family: monospace, sans-serif;
     font-size: 16px;
   }
-  /* line 19, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body nav {
     position: absolute;
     width: 100%;
     z-index: 3;
   }
-  /* line 25, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main {
     height: 100vh;
     padding-top: 4rem;
     position: relative;
     width: 100%;
   }
-  /* line 31, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content {
     padding: 1.5rem;
     position: absolute;
     z-index: 0;
   }
-  /* line 36, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content h1 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
   }
-  /* line 41, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content h2 {
     font-size: 1.75rem;
     margin-top: 2rem;
   }
-  /* line 46, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content h2.studios {
     margin-top: 0rem;
   }
-  /* line 50, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
+  body main #content ol {
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+  body main #content ol li {
+    margin-bottom: 1rem;
+  }
   body main #content ul {
     margin-left: 2rem;
     margin-top: 1rem;
   }
-  /* line 54, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content ul li {
     margin-bottom: 1rem;
   }
-  /* line 60, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #code_from_class h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
-  /* line 67, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #code_gists h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
-  /* line 72, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #code_gists h2 {
     font-weight: normal;
     margin-top: 1rem;
   }
-  /* line 78, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #useful_links {
     margin-top: 2rem;
   }
-  /* line 81, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #useful_links h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
-  /* line 87, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content .prompt_text {
     margin-top: 1rem;
   }
-  /* line 91, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content #reminders {
     padding-bottom: 1rem;
   }
-  /* line 95, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content .screenshot_container {
     margin-top: 1rem;
     width: 100%;
   }
-  /* line 99, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content .screenshot_container .screenshot_with_label {
     margin: auto;
     margin-bottom: 2rem;
     width: 90%;
   }
-  /* line 104, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content .screenshot_container .screenshot_with_label label {
     display: block;
     margin-top: 0.5rem;
     text-align: center;
     width: 100%;
   }
-  /* line 111, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #content .screenshot_container .screenshot_with_label .screenshot {
     width: 100%;
   }
-  /* line 119, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu {
     background-color: #FFFFFF;
     position: absolute;
@@ -341,27 +296,22 @@ input, select {
     -webkit-transition: all .5s, -webkit-transform .5s;
     transition: all .5s, transform .5s;
   }
-  /* line 130, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul {
     font-size: 1.75rem;
     list-style: none;
     text-decoration: none;
   }
-  /* line 135, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul li {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
   }
-  /* line 140, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul li:last-child {
     padding-bottom: 1rem;
   }
-  /* line 144, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #menu ul li:first-child {
     padding-top: 1rem;
   }
-  /* line 151, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body main #shadow_div {
     background-color: #444444;
     height: 100vh;
@@ -375,14 +325,12 @@ input, select {
     -webkit-transition: all .5s, -webkit-transform .5s;
     transition: all .5s, transform .5s;
   }
-  /* line 167, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   body pre code {
     background-color: #eee;
     border: 1px solid #999;
     display: block;
     padding: 20px;
   }
-  /* line 175, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_small.scss */
   .clearfix:after {
     content: "";
     display: table;
@@ -391,117 +339,93 @@ input, select {
 }
 
 @media only screen and (min-width: 35rem) {
-  /* line 4, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
   body main div#content #desktop_schedule_table {
     display: block;
     text-align: left;
     width: 100%;
   }
-  /* line 9, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
   body main div#content #desktop_schedule_table th {
     background-color: #009688;
     color: #FFFFFF;
     padding: 0.5rem;
   }
-  /* line 15, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
   body main div#content #desktop_schedule_table td {
     padding: 0.5rem;
   }
-  /* line 19, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
   body main div#content #desktop_schedule_table tr:nth-child(2n+1) {
     background-color: #B2DFDB;
   }
-  /* line 23, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
   body main div#content #desktop_schedule_table .week {
     width: 20%;
   }
-  /* line 27, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
   body main div#content #desktop_schedule_table .topic {
     width: 40%;
   }
-  /* line 31, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
   body main div#content #desktop_schedule_table .assigned {
     width: 20%;
   }
-  /* line 35, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
   body main div#content #desktop_schedule_table .deadlines {
     width: 20%;
   }
-  /* line 41, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
   body main div#content #mobile_schedule_grid {
     display: none;
   }
-  /* line 45, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
   body main div#content .screenshot_container {
     display: inline-block;
   }
-  /* line 48, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
   body main div#content .screenshot_container .screenshot_with_label {
     float: left;
     margin: auto;
     margin-bottom: 2rem;
     width: 45%;
   }
-  /* line 54, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
   body main div#content .screenshot_container .screenshot_with_label:nth-child(2n) {
     float: right;
   }
-  /* line 58, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
   body main div#content .screenshot_container .screenshot_with_label label {
     display: block;
     margin-top: 0.5rem;
     text-align: center;
     width: 100%;
   }
-  /* line 65, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_medium.scss */
   body main div#content .screenshot_container .screenshot_with_label .screenshot {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 60rem) {
-  /* line 5, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_large.scss */
   body main div#content .screenshot_container .screenshot_with_label {
     display: inline-block;
     float: unset;
     margin: 0rem 2rem 2rem 2rem;
     width: 15rem;
   }
-  /* line 11, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_large.scss */
   body main div#content .screenshot_container .screenshot_with_label:nth-child(2n) {
     float: unset;
   }
-  /* line 16, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_large.scss */
   body main div#content .screenshot_container .screenshot_with_label label {
     display: block;
     margin-top: 0.5rem;
     text-align: center;
     width: 100%;
   }
-  /* line 23, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_large.scss */
   body main div#content .screenshot_container .screenshot_with_label .screenshot {
     width: 100%;
   }
-  /* line 32, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_large.scss */
   body nav#expanded_menu {
     display: block;
     padding-top: 1.125rem;
   }
-  /* line 36, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_large.scss */
   body nav#expanded_menu a {
     color: #FFFFFF;
     font-size: 1.75rem;
     margin-left: 3rem;
     text-decoration: none;
   }
-  /* line 42, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_large.scss */
   body nav#expanded_menu a:first-child {
     margin-left: 1rem;
   }
-  /* line 48, /Users/taylorherald/Documents/GitHub/AndroidAppDevelopment/scss/_style_large.scss */
   body nav#hamburger_menu {
     display: none;
   }
 }
-
-/*# sourceMappingURL=../css/styles.map */
